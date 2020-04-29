@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="exam.day03.view.selectview">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!-- SelectView_ExamActivity 를 등록
+             intent-filter를 이용해서 action을 정의
+
+             <action android:name="..." /> : action 정의. "이런 일을 하는 객체다." (custom action 생성 가능)
+                    android.intent.action.MAIN: main액티비티로 설정
+             <category android:name="android.intent.category.LAUNCHER" /> : 실행할 앱의 아이콘 만들기
+                    DEFAULT : 일반적인 category
+        -->
+        <activity android:name=".exam.SelectView_ExamActivity">
+            <intent-filter>
+                <action android:name="com.exam.selectview"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.activity.CustomAdapterTestActivity">
+        </activity>
+        <activity android:name=".view.activity.InflatorTestActivity" />
+        <activity android:name=".view.activity.AddViewTestActivity" />
+        <activity android:name=".view.activity.CustomRowTestActivity"></activity>
+        <activity android:name=".view.activity.ResourceDataListActivity" />
+        <activity android:name=".view.activity.ListViewTestActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RadioActivity" />
+        <activity android:name=".CheckActivity" />
+        <activity android:name=".view.activity.MainActivity" />
+        <!--2. 퍼미션 설정하기-->
+        <activity android:name=".SelectView_ExamActivity">
+            <intent-filter>
+                <action android:name="com.exam.selectview"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

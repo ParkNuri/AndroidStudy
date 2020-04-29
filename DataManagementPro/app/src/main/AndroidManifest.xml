@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="exam.day03.view.datamanagementpro">
+    <!--
+     설치 명세서. 특정 permission을 설정한 앱을 사용하기 위해서는
+         해당 permission을 설정해야 그 앱을 호출할 수 있다.
+    -->
+    <uses-permission android:name="com.exam.permission.JAVA_PERMISSION" />
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 기본 권한 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".sqlite.exam.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".sqlite.DBMainActivity">
+
+        </activity>
+        <activity android:name=".exam.MemoExamActivity">
+
+        </activity>
+        <activity android:name=".fileSystem.ExternalFileManager">
+
+        </activity>
+        <activity android:name=".fileSystem.InternalFileManager"></activity>
+        <activity android:name=".permission.RuntimePermissionTest" />
+        <activity android:name=".permission.BasicPermissionTest" />
+        <activity android:name=".permission.UserCustomPermission" />
+    </application>
+
+</manifest>

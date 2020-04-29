@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SwitchFrameActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ECE3C3">
+
+        <Button
+            android:id="@+id/menuloginbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/login" />
+
+        <Button
+            android:id="@+id/menusigninbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/signin" />
+
+        <Button
+            android:id="@+id/menudetailbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/detail" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <!--login-->
+        <LinearLayout
+            android:id="@+id/loginView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:background="#C3D3EC">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login"
+                android:textSize="40dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="id"
+                android:inputType="text" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="pw"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/loginbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BUTTON" />
+        </LinearLayout>
+
+        <!--sign in-->
+        <LinearLayout
+            android:id="@+id/signinView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            android:background="#DBC3EC">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/signin"
+                android:textSize="40dp" />
+
+            <EditText
+                android:id="@+id/inputname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="name"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/inputid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="id"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/inputpw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="pw"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/signinbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BUTTON" />
+            <TextView
+                android:id="@+id/resultView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+        </LinearLayout>
+
+        <!--detail-->
+        <LinearLayout
+            android:id="@+id/detailView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical"
+            android:visibility="invisible"
+            android:background="#ECC3DD">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="회원정보"
+                android:textSize="40dp"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cu"
+               />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+
+                android:text="장기용"
+                android:textSize="30dp" />
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

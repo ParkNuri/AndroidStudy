@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--  색상 글꼴 등 resource 정의  -->
+    <!-- <style name="AppTheme" parent="Theme.MaterialComponents.Light">
+        : MaterialComponents 사용시 parent 꼭 material로 변경 (화면 비율 )-->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="windowActionBar">false</item>-->   <!--actionbar 제거-->
+        <!--<item name="windowNoTitle">true</item>-->  <!--title 문구 제거-->
+    </style>
+
+</resources>

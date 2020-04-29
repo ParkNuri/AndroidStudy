@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+    <!--activity를 사용하기 위해서는 id가 필수-->
+    <!--+기호는 이름을 내가 정의할때 ,id는 참조해서 쓸때-->
+    <!--id는 중복되면 안되기 때문에 기호나 문자열, 체계로 유닠해야한다.-->
+    <TextView
+        android:id="@+id/second_txtView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="나의 문자열"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="30sp" />
+</LinearLayout>

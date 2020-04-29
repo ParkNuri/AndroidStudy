@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mylist_data">
+        <item>박누리</item>
+        <item>김현정</item>
+        <item>백지영</item>
+        <item>오소리</item>
+        <item>차돌박이</item>
+        <item>피자</item>
+        <item>치킨</item>
+        <item>된장찌개</item>
+        <item>아이스크림</item>
+        <item>짜장면</item>
+        <item>짜장밥</item>
+        <item>짬뽕</item>
+        <item>짬뽕밥</item>
+        <item>떡볶이</item>
+        <item>튀김</item>
+        <item>순대</item>
+    </string-array>
+</resources>
