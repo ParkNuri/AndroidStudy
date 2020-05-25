@@ -1,13 +1,13 @@
 package multi.android.network.tcp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import multi.android.network.R;
-import multi.android.network.tcp.ChatClientActivity;
+
 
 public class StartNetWork extends AppCompatActivity {
 
@@ -17,7 +17,7 @@ public class StartNetWork extends AppCompatActivity {
         setContentView(R.layout.activity_start_net_work);
     }
     public void btn_tcpChat(View view){
-        Intent intent = new Intent(this, ChatClientActivity.class);
+        Intent intent = new Intent(this, ChatClientActivity2.class);
         startActivity(intent);
     }
 }

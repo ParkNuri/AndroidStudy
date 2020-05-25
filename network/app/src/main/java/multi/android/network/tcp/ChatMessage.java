@@ -1,4 +1,4 @@
-package multi.android.network.chatting;
+package multi.android.network.tcp;
 
 public class ChatMessage {
     String nickname;
